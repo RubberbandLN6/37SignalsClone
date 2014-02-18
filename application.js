@@ -1,9 +1,9 @@
 $(document).ready(function() {
-	$('#basecamp').hover(function() {
-		$('#leftarrow').show();
+	$('#basecamp').mouseover(function() {
+		$('#left').show();
 	});
 
 	$('#basecamp').mouseout(function() {
-		$('#leftarrow').hide();
+		$('#left').hide();
 	});
 });
