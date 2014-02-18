@@ -4,7 +4,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Crimson+Text:600' rel='stylesheet' type='text/css'>
 		<meta charset="utf-8" />
 		<title>37signals Clone</title>
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="jquery.1.11.0.js"></script>
 		<link rel="stylesheet" type="text/css" href="main.css">
 		<script type="text/javascript" src='application.js'></script>
 	</head>
@@ -21,9 +21,13 @@
 		</nav>
 	<div id="logo">
 		<img src="images/logo.png" id="37signalslogo">
-	<div class="headings">
+		<div class="headings" id="intro">
 		<h1>Making collaboration productive and enjoyable for people every day.</h1>
 		<h2>Frustration-free web-based apps for collaboration, sharing information, and making decisions.</h2>
+	</div>
+	<div id="basecamp-heading" class="headings hide">
+		<h1>Basecamp</h1>
+		<h2>Info about basecamp.</h2>
 	</div>
 	<div>
 	<a id="basecamp" class="panel" href="https://basecamp.com">
@@ -31,19 +35,21 @@
 		<h3 class="product">Basecamp</h3>
 		<h4 class="product-type">Manage Projects</h4>
 		<h5 class="description">Used by millions for project management.</h5>
-		<div id="left" style="display:none;" src="images/arrow-left.png"></div>
+		<img id="left-arrow" class="hide" src="images/arrow-left.png">
 	</a>
 	<a id="highrise" class="panel" href="http://highrisehq.com/?source=37signals+home">
 		<img src="images/logo-hr.png" id="highrise-logo">
 		<h3 class="product">Highrise</h3>
 		<h4 class="product-type">Manage Contacts</h4>
 		<h5 class="description">Know the people you do business with.</h5>
+		<img id="up-arrow" class="hide" src="images/arrow-up.png">
 	</a>
 	<a id="campfire" class="panel" href="http://campfirenow.com/?source=37signals+home">
 		<img src="images/logo-cf.png" id="campfire-logo">
 		<h3 class="product">Campfire</h3>
 		<h4 class="product-type">Work in Real-Time</h4>
 		<h5 class="description">Group chat rooms for your business.</h5>
+		<img id="right-arrow" class="hide" src="images/arrow-right.png">
 	</a>
 </div>
 <div class="footer">

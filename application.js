@@ -1,9 +1,33 @@
 $(document).ready(function() {
-	$('#basecamp').mouseover(function() {
-		$('#left').show();
+	$('#basecamp').hover(function() {
+		$('.headings').hide();
+		$('#basecamp-heading').show();
+		$('#left-arrow').show();
+	},function(){
+		$('#basecamp-heading').hide();
+		$('#intro').show();
+		$('#left-arrow').hide();
 	});
-
-	$('#basecamp').mouseout(function() {
-		$('#left').hide();
+});
+$(document).ready(function() {
+	$('#highrise').hover(function() {
+		$('.headings').hide();
+		$('#basecamp-heading').show();
+		$('#up-arrow').show();
+	},function(){
+		$('#basecamp-heading').hide();
+		$('#intro').show();
+		$('#up-arrow').hide();
+	});
+});
+$(document).ready(function() {
+	$('#campfire').hover(function() {
+		$('.headings').hide();
+		$('#basecamp-heading').show();
+		$('#right-arrow').show();
+	},function(){
+		$('#basecamp-heading').hide()
+		$('#intro').show();
+		$('#right-arrow').hide();
 	});
 });
