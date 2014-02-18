@@ -1,5 +1,9 @@
 $(document).ready(function() {
-	$('#basecamp').mouseenter(function() {
-		$('#leftarrow').toggle();
+	$('#basecamp').hover(function() {
+		$('#leftarrow').show();
+	});
+
+	$('#basecamp').mouseout(function() {
+		$('#leftarrow').hide();
 	});
 });
