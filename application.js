@@ -2,11 +2,11 @@ $(document).ready(function() {
 	$('#basecamp').hover(function() {
 		$('.headings').hide();
 		$('#basecamp-heading').show();
-		$('#left-arrow').show();
+		$('#arrowl').show();
 	},function(){
 		$('#basecamp-heading').hide();
 		$('#intro').show();
-		$('#left-arrow').hide();
+		$('#arrowl').hide();
 	});
 });
 $(document).ready(function() {
