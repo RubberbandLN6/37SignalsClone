@@ -8,25 +8,23 @@ $(document).ready(function() {
 		$('#intro').show();
 		$('#arrowl').hide();
 	});
-});
-$(document).ready(function() {
+
 	$('#highrise').hover(function() {
 		$('.headings').hide();
-		$('#basecamp-heading').show();
+		$('#highrise-heading').show();
 		$('#up-arrow').show();
 	},function(){
-		$('#basecamp-heading').hide();
+		$('#highrise-heading').hide();
 		$('#intro').show();
 		$('#up-arrow').hide();
 	});
-});
-$(document).ready(function() {
+
 	$('#campfire').hover(function() {
 		$('.headings').hide();
-		$('#basecamp-heading').show();
+		$('#campfire-heading').show();
 		$('#right-arrow').show();
 	},function(){
-		$('#basecamp-heading').hide()
+		$('#campfire-heading').hide()
 		$('#intro').show();
 		$('#right-arrow').hide();
 	});

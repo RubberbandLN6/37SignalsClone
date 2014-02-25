@@ -83,7 +83,7 @@ a:link {
 	margin:0 auto;
 	padding-top: 30px;
 }
-h1 {
+h1, .secondary-heading h2 {
 	text-align: center;
 	position: relative;
 	font-size: 50px;
@@ -93,13 +93,21 @@ h1 {
 	font-weight: bold;
 	display: block;
 }
-h2 {
+.secondary-heading h2 {
+	font-size: 40px;
+}
+
+h2,.secondary-heading h3 {
 	display: block;
 	font-family: 'Crimson Text';
 	font-size: 20px;
 	margin-top: 15px;
 	margin-bottom: 25px;
 
+}
+.secondary-heading a {
+	text-decoration: underline;
+	color: #336699;
 }
 h3 {
 	font-family: "Lucida Sans Unicode", "Verdana", sans-serif;
@@ -116,7 +124,8 @@ h3 {
 	margin:0 10px 30px;
 	border: 1px solid #e8e8e8;
 	border-radius: 5px;
-	background: -moz-linear-gradient(center top , #FFF, #EFEFEF) repeat scroll 0% 0% transparent;;
+	background: -moz-linear-gradient(bottom, #F0F0F0, #ffffff);
+	background: -webkit-gradient(linear, center bottom, center top, from(#f0f0f0), to(#ffffff));
 }
 #highrise-logo {
 	display: block;
@@ -143,9 +152,9 @@ h3 {
 	text-decoration: underline;
 	color: #336699; 
 }
-.headings {
+.headings, .secondary-heading {
 	max-width: 800px;
-	display: block;
+	height: 200px;
 	margin: 0 auto;
 }
 .footer {
@@ -172,4 +181,9 @@ h3 {
 }
 .arrow {
 	position: relative;
+}
+#products {
+	position: relative;
+	max-width: 800px;
+	margin:0 auto;
 }
